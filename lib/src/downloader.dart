@@ -102,7 +102,7 @@ class FlutterDownloader {
     bool requiresStorageNotLow = true,
     bool saveInPublicStorage = false,
     bool allowCellular = true,
-    int timeout = 15000,
+    int timeout = 60000,
   }) async {
     assert(_initialized, 'plugin flutter_downloader is not initialized');
     assert(Directory(savedDir).existsSync(), 'savedDir does not exist');
@@ -271,7 +271,7 @@ class FlutterDownloader {
   static Future<String?> resume({
     required String taskId,
     bool requiresStorageNotLow = true,
-    int timeout = 15000,
+    int timeout = 60000,
   }) async {
     assert(_initialized, 'plugin flutter_downloader is not initialized');
 
